@@ -145,6 +145,10 @@ a:hover {
   color: #9bf1ff;
 }
 
+.no-hover-color:hover {
+  color: #fff;
+}
+
 .bg-primary {
   background: #2a2f4a;
 }
@@ -338,13 +342,43 @@ a {
   background-color: #9bf1ff;
 }
 
-.bg-aliquam, bg-tempus {
+.product {
+  background: #b15656;
+}
+
+.bg-aliquam, .bg-tempus, .bg-magna, .bg-ipsum, .bg-consequat, .bg-etaima {
+  padding: 120px 48px 120px 48px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.bg-aliquam:hover, .bg-tempus:hover, .bg-magna:hover, .bg-ipsum:hover, .bg-consequat:hover, .bg-etaima:hover {
+  opacity: 1;
 }
 
 .bg-aliquam {
-  background-image: url("");
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/danika-perkinson-QxHJ9lkXYNk-unsplash.jpg?raw=true");
+}
+
+.bg-tempus {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/cristina-gottardi-wVTGdIGdojc-unsplash.jpg?raw=true");
+}
+
+.bg-magna {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/brooke-lark-kXQ3J7_2fpc-unsplash.jpg?raw=true");
+}
+
+.bg-ipsum {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/gautam-arora-dCnHbVhM2w8-unsplash.jpg?raw=true");
+}
+
+.bg-consequat {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/presetbase-lightroom-presets-QN6NkYi3CKs-unsplash.jpg?raw=true");
+}
+
+.bg-etaima {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/zach-taiji-9z3PSK4sn1c-unsplash.jpg?raw=true");
 }
 /*# sourceMappingURL=all.css.map */

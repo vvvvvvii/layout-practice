@@ -1,6 +1,6 @@
 .header{
-    padding: 40px 24px 60px 24px;
-    background-image: url('https://images.unsplash.com/photo-1503437313881-503a91226402?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2389&q=80');
+    padding: 40px 24px 160px 24px;
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/bozhin-karaivanov-3HnVKfQZGTQ-unsplash.jpg?raw=true');
     background-position: 50% 45%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,9 +16,6 @@
             background-color: $secondary;
         }
     }
-}
-.product{
-    background: #b15656;
 }
 .bg-aliquam,.bg-tempus,.bg-magna,.bg-ipsum,.bg-consequat,.bg-etaima{
     padding: 120px 48px 120px 48px; 
@@ -37,14 +34,21 @@
     background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/cristina-gottardi-wVTGdIGdojc-unsplash.jpg?raw=true');
 }
 .bg-magna{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/brooke-lark-kXQ3J7_2fpc-unsplash.jpg?raw=true');
+    background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/echo-grid-GMgdINYCA3w-unsplash.jpg?raw=true");
 }
 .bg-ipsum{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/gautam-arora-dCnHbVhM2w8-unsplash.jpg?raw=true');
+    background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/sam-moqadam-LOUhsrJbs0w-unsplash.jpg?raw=true");
 }
 .bg-consequat{
     background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/presetbase-lightroom-presets-QN6NkYi3CKs-unsplash.jpg?raw=true');
 }
 .bg-etaima{
     background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day01/img/zach-taiji-9z3PSK4sn1c-unsplash.jpg?raw=true');
+}
+.info{
+    padding: 80px 0 40px 0;
+    background: linear-gradient(#f14242,$primary),;
+}
+.footer{
+    padding: 40px 0;
 }

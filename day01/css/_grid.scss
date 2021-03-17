@@ -1,9 +1,29 @@
 .container{
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 1140px;
+}
+.container-fluid{
+    margin:0;
+    width: 100%;
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.no-gutters{
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }
 .col{
     width: inherit;
@@ -41,7 +61,12 @@
         width: calc(11*100%/12);
     }
 }
-
+.w-100{
+    width: 100%;
+}
+.w-40{
+    width: 40%;
+}
 .d-flex{
     display: flex;
 }
@@ -52,6 +77,9 @@
     align-items: center;
 }
 
+.d-block{
+    display: block;
+}
 .d-inline-block{
     display: inline-block;
 }

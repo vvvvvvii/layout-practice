@@ -1,0 +1,19 @@
+body{
+	color: $light;
+}
+a{
+	color: $light;
+	&:hover{
+		color: $secondary;
+	}
+}
+.bg-primary{
+    background: $primary;
+}
+
+.text-primary{
+    color: $primary;
+}
+.text-light{
+    color: $light;
+}

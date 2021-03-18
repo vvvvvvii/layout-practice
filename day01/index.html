@@ -122,21 +122,31 @@
     <div class="bg-primary footer">
         <div class="container">
             <div class="row">
-                <form class="col-8">
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="name" class="d-block">NAME</label>
-                            <input type="name" id="name" class="w-100">
+                <div class="col-8">
+                    <form>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">NAME</label>
+                                    <input type="name" id="name" class="form-input">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">EMAIL</label>
+                                    <input type="email" id="email" class="form-input">
+                                </div>
+                            </div>
+                            
+                            
                         </div>
-                        <div class="col-6">
-                            <label for="email" class="d-block">EMAIL</label>
-                            <input type="email" id="email" class="w-100">
+                        <div class="form-group">
+                            <label for="message" class="mb-1">MESSAGE</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="d-block w-100">
+                            </textarea>
                         </div>
-                    </div>
-                    <label for="message" class="d-block">MESSAGE</label>
-                    <textarea name="message" id="message" cols="30" rows="10">
-                    </textarea>
-                </form>
+                    </form>
+                </div>
                 <div class="col-4">
 
                 </div>

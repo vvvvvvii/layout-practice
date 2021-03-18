@@ -1,0 +1,67 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.w-60{
+    width: 60%;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+//spacer
+/*
+1: 8px,
+2: 16px,
+3: 20px,
+4: 24px,
+5: 36px,
+6: 40px,
+7: 48px,
+8: 72px
+*/
+.pt-4{
+    padding-top: 24px;
+}
+.pb{
+    &-1{
+        padding-bottom: 8px;
+    }
+    &-2{
+        padding-bottom: 16px;
+    }
+    &-5{
+        padding-bottom: 36px;
+    }
+}
+
+.mb{
+    &-2{
+        margin-bottom: 16px;
+    }
+    &-4{
+        margin-bottom: 24px;
+    }
+    &-6{
+        margin-bottom: 40px;
+    }
+    &-7{
+        margin-bottom: 48px;
+    }
+    &-8{
+        margin-bottom: 72px;
+    }
+}
+.ml{
+    &-2{
+        margin-left: 16px;
+    }
+    &-4{
+        margin-left: 24px;
+    }
+}
+.text-center{
+    text-align: center;
+}

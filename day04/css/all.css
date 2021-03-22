@@ -64,8 +64,13 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .text-light {

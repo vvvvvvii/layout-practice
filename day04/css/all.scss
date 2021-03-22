@@ -56,6 +56,11 @@ img{
     max-width: 100%;
     height: auto;
 }
+a{
+    &:hover{
+        cursor: pointer;
+    }
+}
 //variables
 $primary: #891818;
 $dark:  #000;
@@ -70,6 +75,9 @@ $light: #fff;
 }
 
 //spacer&grid
+.pb-3{
+    padding-bottom: 24px;
+}
 .mb{
     &-1{
         margin-bottom: 8px;
@@ -122,9 +130,21 @@ $light: #fff;
     width:100%;
     padding-right:12px;
     padding-left:12px;
+    &-4{
+        width: calc(4*100%/12);
+    }
+    &-6{
+        width: calc(6*100%/12);
+    }
+    &-8{
+        width: calc(8*100%/12);
+    }
 }
 .d-flex{
     display: flex;
+}
+.m0-auto{
+    margin: 0 auto;
 }
 //fonts
 .h1{
@@ -139,12 +159,44 @@ $light: #fff;
 .h4{
     font-size: 20px;
 }
+.text-center{
+    text-align: center;
+}
 .text-italic{
     font-style: italic;
 }
+.font-bold{
+    font-weight: bold;
+}
+//border
+.border-bottom{
+    border-bottom: 1px solid $dark;
+}
 //index
 .header{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day04/img/photo-1552393700-42696fb89bfa.png?raw=true');
+    background-position: center;
+    background-size: cover;
+    height: 958px;
     padding-top: 356px;
     padding-bottom: 268px;
-    background-image: url('img/');
+    display: flex;
+    justify-content: center;
+}
+.about{
+    padding-top: 64px;
+    padding-bottom: 56px;
+    width: calc(100%/3);
+    margin: 0 auto;
+}
+.profile-img{
+    margin: 0 auto 32px;
+}
+.work-info{
+    padding-top: 64px;
+    padding-bottom: 160px;
+}
+.contact{
+    padding-top: 64px;
+    padding-bottom: 80px;
 }

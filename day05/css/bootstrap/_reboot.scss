@@ -87,7 +87,7 @@ hr {
 // stylelint-disable-next-line selector-list-comma-newline-after
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: $headings-margin-bottom;
+  margin-bottom: 0;
 }
 
 // Reset margins on paragraphs
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 // bottom margin to use `rem` units instead of `em`.
 p {
   margin-top: 0;
-  margin-bottom: $paragraph-margin-bottom;
+  margin-bottom: 0;
 }
 
 // Abbreviations
@@ -126,8 +126,9 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
 ol ol,
@@ -249,7 +250,8 @@ figure {
 //
 
 img {
-  vertical-align: middle;
+  display: block;
+  max-width: 100%;  
   border-style: none; // Remove the border on images inside links in IE 10-.
 }
 

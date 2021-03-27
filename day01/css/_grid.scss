@@ -1,8 +1,8 @@
 .container{
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 24px;
+    padding-left: 24px;
     width: 100%;
     max-width: 1140px;
 }
@@ -13,8 +13,8 @@
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -24px;
+    margin-left: -24px;
 }
 .no-gutters{
     margin-right: 0;
@@ -26,8 +26,8 @@
     padding-left: 0;
 }
 .col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11{
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 .col{
     width: inherit;

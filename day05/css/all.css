@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import url(/Users/weiliu/Desktop/切版自由練習/day05/css/bootstrap/bootstrap.css);
+.bg-header {
+  padding-top: 356px;
+  padding-bottom: 268px;
+  background-image: url("");
+  background-size: contain;
+  background-position: center;
+}
+/*# sourceMappingURL=all.css.map */

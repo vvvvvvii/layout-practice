@@ -1,0 +1,20 @@
+.header{
+    background: $primary;
+    display: flex;
+    @media (min-width: $grid-md){
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 39px;
+    }
+    @media (min-width: $grid-lg){
+        padding: 30px 88px;
+    }
+}
+h1{
+    background-image: url('');
+    width: 150px; 
+    height: 42.677px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}

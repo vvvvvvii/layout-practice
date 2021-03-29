@@ -1,0 +1,14 @@
+//text-colors
+@each $name,$color in $colorTypes{
+    .text-#{$name}{
+        color: $color;
+    }
+}
+
+//font-sizes
+@each $name,$size in $fontTypes{
+    .fz-#{$name}{
+        font-size: $baseSize * $size;
+    }
+}
+

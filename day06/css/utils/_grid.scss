@@ -1,0 +1,68 @@
+.container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter-width / 2;;
+    padding-right: $gutter-width / 2;;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($gutter-width / 2);
+    margin-right: -($gutter-width / 2);
+}
+%col{
+    position: relative;
+    width: 100%;
+    padding-left: $gutter-width / 2;
+    padding-right: $gutter-width / 2;
+}
+@each $key, $value in $grid-breakpoints { //取出所有$grid-breakpoints的值
+    @for $size from 1 through $grid-sum { //col後面不管有沒有寫東西都繼承col 的 css 屬性
+      @if not $value {
+        .col-#{$size} {
+          @extend %col;
+        }
+      }@else{
+        .col-#{$key}-#{$size} {
+          @extend %col;
+        }
+      }
+    }
+}
+@each $key, $value in $grid-breakpoints { //取出所有$grid-breakpoints的值
+    @if not $value { //col後面沒有值時
+        @for $size from 1 to $grid-sum {
+            .col-#{$size} { //col後面數字是多少
+                max-width: 100% * ($size / $grid-sum); //這裡就是 100%*(該數字除以 $grid-sum)
+                flex: 0 0 (100% * ($size / $grid-sum));
+            }
+        } 
+    }@else{
+        @media screen and (min-width: $value) { //加上$grid-breakpoints的值到rwd中
+            @for $size from 1 to $grid-sum {
+                .col-#{$key}-#{$size} {
+                    max-width: 100% * ($size / $grid-sum);
+                    flex: 0 0 (100% * ($size / $grid-sum));
+                }
+            }
+        }
+    }
+}
+.no-gutters {
+    margin-left: 0px;
+    margin-right: 0px;
+    > [class*='col-'] { //在 row 層下 no-gutters 則下面的 col padding-left/right 通通調為 0
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}

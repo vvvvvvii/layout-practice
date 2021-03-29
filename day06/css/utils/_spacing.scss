@@ -1,43 +1,91 @@
-
-@each $name,$size in $spaceTypes{
-    .mt-#{$name}{
-        margin-top: $baseSpace * $size;
-    }
-    .mb-#{$name}{
-        margin-bottom: $baseSpace * $size;
-    }
-    .ml-#{$name}{
-        margin-left: $baseSpace * $size;
-    }
-    .mr-#{$name}{
-        margin-right: $baseSpace * $size;
-    }
-    .mx-#{$name}{
-        margin-left: $baseSpace * $size;
-        margin-right: $baseSpace * $size;
-    }
-    .my-#{$name}{
-        margin-top: $baseSpace * $size;
-        margin-bottom: $baseSpace * $size;
-    }
-    .pt-#{$name}{
-        padding-top: $baseSpace * $size;
-    }
-    .pb-#{$name}{
-        padding-bottom: $baseSpace * $size;
-    }
-    .pl-#{$name}{
-        padding-left: $baseSpace * $size;
-    }
-    .pr-#{$name}{
-        padding-right: $baseSpace * $size;
-    }
-    .px-#{$name}{
-        padding-left: $baseSpace * $size;
-        padding-right: $baseSpace * $size;
-    }
-    .py-#{$name}{
-        padding-top: $baseSpace * $size;
-        padding-bottom: $baseSpace * $size;
+@each $key, $value in $grid-breakpoints { //取出所有$grid-breakpoints的值
+    @if not $value { //col後面沒有值時
+        @each $name,$size in $spaceTypes{
+            .mt-#{$name}{
+                margin-top: $baseSpace * $size;
+            }
+            .mb-#{$name}{
+                margin-bottom: $baseSpace * $size;
+            }
+            .ml-#{$name}{
+                margin-left: $baseSpace * $size;
+            }
+            .mr-#{$name}{
+                margin-right: $baseSpace * $size;
+            }
+            .mx-#{$name}{
+                margin-left: $baseSpace * $size;
+                margin-right: $baseSpace * $size;
+            }
+            .my-#{$name}{
+                margin-top: $baseSpace * $size;
+                margin-bottom: $baseSpace * $size;
+            }
+            .pt-#{$name}{
+                padding-top: $baseSpace * $size;
+            }
+            .pb-#{$name}{
+                padding-bottom: $baseSpace * $size;
+            }
+            .pl-#{$name}{
+                padding-left: $baseSpace * $size;
+            }
+            .pr-#{$name}{
+                padding-right: $baseSpace * $size;
+            }
+            .px-#{$name}{
+                padding-left: $baseSpace * $size;
+                padding-right: $baseSpace * $size;
+            }
+            .py-#{$name}{
+                padding-top: $baseSpace * $size;
+                padding-bottom: $baseSpace * $size;
+            }
+        } 
+    }@else{
+        @media screen and (min-width: $value) { //加上$grid-breakpoints的值到rwd中
+            @each $name,$size in $spaceTypes{
+                .mt-#{$key}-#{$name}{
+                    margin-top: $baseSpace * $size;
+                }
+                .mb-#{$key}-#{$name}{
+                    margin-bottom: $baseSpace * $size;
+                }
+                .ml-#{$key}-#{$name}{
+                    margin-left: $baseSpace * $size;
+                }
+                .mr-#{$key}-#{$name}{
+                    margin-right: $baseSpace * $size;
+                }
+                .mx-#{$key}-#{$name}{
+                    margin-left: $baseSpace * $size;
+                    margin-right: $baseSpace * $size;
+                }
+                .my-#{$key}-#{$name}{
+                    margin-top: $baseSpace * $size;
+                    margin-bottom: $baseSpace * $size;
+                }
+                .pt-#{$key}-#{$name}{
+                    padding-top: $baseSpace * $size;
+                }
+                .pb-#{$key}-#{$name}{
+                    padding-bottom: $baseSpace * $size;
+                }
+                .pl-#{$key}-#{$name}{
+                    padding-left: $baseSpace * $size;
+                }
+                .pr-#{$key}-#{$name}{
+                    padding-right: $baseSpace * $size;
+                }
+                .px-#{$key}-#{$name}{
+                    padding-left: $baseSpace * $size;
+                    padding-right: $baseSpace * $size;
+                }
+                .py-#{$key}-#{$name}{
+                    padding-top: $baseSpace * $size;
+                    padding-bottom: $baseSpace * $size;
+                }
+            }
+        }
     }
 }

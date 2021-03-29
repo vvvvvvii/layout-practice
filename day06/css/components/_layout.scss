@@ -1,7 +1,10 @@
 .header{
     background: $primary;
     display: flex;
+    flex-direction: column;
+    padding-top: 10px;
     @media (min-width: $grid-md){
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 30px 39px;
@@ -9,12 +12,37 @@
     @media (min-width: $grid-lg){
         padding: 30px 88px;
     }
-}
-h1{
-    background-image: url('');
-    width: 150px; 
-    height: 42.677px;
-    text-indent: 101%;
-    white-space: nowrap;
-    overflow: hidden;
+    &-logo{
+        width: 48px; 
+        height: 29.14px;
+        background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/logo-new_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?raw=true');
+        background-size: cover;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 0 auto 10px;
+        @media (min-width: $grid-md){
+            margin: 0;
+            width: 80px; 
+            height: 48.57px;
+        }
+    }
+    &-nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item{
+        width: 50%;
+        border: 1px solid $light;
+        @media (min-width: $grid-md){
+            width: auto;
+            border: 0px;
+        }
+    }
+    &-link{
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: center;
+    }
 }

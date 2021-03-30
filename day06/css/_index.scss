@@ -1,0 +1,65 @@
+.banner{
+    height: 394px;
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/laurenz-kleinheider-OsC8HauR0e0-unsplash.jpg?raw=true');
+    background-size: cover;
+    padding: 164px 0;
+    @media (min-width: $grid-md){
+        height: 840px;
+        padding: 372px 0;
+    }
+    @media (min-width: $grid-lg){
+        padding: 350px 0;
+    }
+}
+.section{
+    padding: 64px 0 80px;
+    &-title{
+        font-size: 24px;
+        font-weight: bold;
+        color: $dark-primary;
+        text-align: center;
+        margin-bottom: 20px;
+        @media (min-width: $grid-md){
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+        @media (min-width: $grid-lg){
+            font-size: 48px;
+            margin-bottom: 60px;
+        }
+    }
+}
+.card{
+    margin-bottom: 40px;
+    @media (min-width: $grid-lg){
+        margin-bottom: 0;
+    }
+    &-img{
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 16px;
+        @media (min-width: $grid-lg){
+            width: 100px;
+            height: 100px;
+            margin-bottom: 40px;
+        }
+    }
+    &-title{
+        font-size: 20px;
+        font-weight: bold;
+        color: $dark-primary;
+        text-align: center;
+        margin-bottom: 8px;
+        @media (min-width: $grid-lg){
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+    }
+    &-paragraph{
+        width: 237px;
+        margin: 0 auto;
+        @media (min-width: $grid-lg){
+            width: 208px;
+        }
+    }
+}

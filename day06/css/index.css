@@ -1,4 +1,12 @@
 .banner {
-  background-image: url("");
+  height: 394px;
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/laurenz-kleinheider-OsC8HauR0e0-unsplash.jpg?raw=true");
+  background-size: cover;
+}
+
+@media (min-width: ) {
+  .banner {
+    height: 840px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -860,6 +860,10 @@ img {
   color: #AA0601;
 }
 
+.text-dark-primary {
+  color: #650300;
+}
+
 .text-secondary {
   color: #FBF2F2;
 }
@@ -936,6 +940,9 @@ img {
   .text-sm-primary {
     color: #AA0601;
   }
+  .text-sm-dark-primary {
+    color: #650300;
+  }
   .text-sm-secondary {
     color: #FBF2F2;
   }
@@ -995,6 +1002,9 @@ img {
 @media screen and (min-width: 768px) {
   .text-md-primary {
     color: #AA0601;
+  }
+  .text-md-dark-primary {
+    color: #650300;
   }
   .text-md-secondary {
     color: #FBF2F2;
@@ -1056,6 +1066,9 @@ img {
   .text-lg-primary {
     color: #AA0601;
   }
+  .text-lg-dark-primary {
+    color: #650300;
+  }
   .text-lg-secondary {
     color: #FBF2F2;
   }
@@ -1115,6 +1128,9 @@ img {
 @media screen and (min-width: 1920px) {
   .text-xl-primary {
     color: #AA0601;
+  }
+  .text-xl-dark-primary {
+    color: #650300;
   }
   .text-xl-secondary {
     color: #FBF2F2;
@@ -5004,8 +5020,16 @@ img {
   }
 }
 
+.m0-auto {
+  margin: 0 auto;
+}
+
 .bg-primary {
   background-color: #AA0601;
+}
+
+.bg-dark-primary {
+  background-color: #650300;
 }
 
 .bg-secondary {
@@ -5212,6 +5236,102 @@ img {
   .icon-email {
     width: 48px;
     height: 48px;
+  }
+}
+
+.banner {
+  height: 394px;
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/laurenz-kleinheider-OsC8HauR0e0-unsplash.jpg?raw=true");
+  background-size: cover;
+  padding: 164px 0;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 840px;
+    padding: 372px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner {
+    padding: 350px 0;
+  }
+}
+
+.section {
+  padding: 64px 0 80px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #650300;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
+}
+
+.card {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  .card {
+    margin-bottom: 0;
+  }
+}
+
+.card-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
+}
+
+@media (min-width: 992px) {
+  .card-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #650300;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 992px) {
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+}
+
+.card-paragraph {
+  width: 237px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .card-paragraph {
+    width: 208px;
   }
 }
 /*# sourceMappingURL=all.css.map */

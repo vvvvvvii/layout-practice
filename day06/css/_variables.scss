@@ -96,3 +96,10 @@ $alignItemsTypes: (
     center: center,
     end: end,
 ) !default;
+
+//text-align
+$textAlign: (
+    left: left,
+    center: center,
+    right: right,
+)

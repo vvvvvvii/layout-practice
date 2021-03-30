@@ -1,36 +1,42 @@
-//text-colors
 @each $key, $value in $grid-breakpoints { //取出所有$grid-breakpoints的值
     @if not $value { 
-        @each $name,$color in $colorTypes{
+        @each $name,$color in $colorTypes{ //text-colors
             .text-#{$name}{
                 color: $color;
             }
         }
+        @each $name,$size in $fontTypes{ //font-sizes
+            .fz-#{$name}{
+                font-size: $baseSize * $size;
+            }
+        }
+        @each $name,$type in $textAlign{ //text-align
+            .text-#{$name}{
+                text-align: $type;
+            }
+        }
     }@else{
         @media screen and (min-width: $value) { //加上$grid-breakpoints的值到rwd中
-            @each $name,$color in $colorTypes{
+            @each $name,$color in $colorTypes{ //text-colors
                 .text-#{$key}-#{$name}{
                     color: $color;
+                }
+            }
+            @each $name,$size in $fontTypes{ //font-sizes
+                .fz-#{$key}-#{$name}{
+                    font-size: $baseSize * $size;
+                }
+            }
+            @each $name,$type in $textAlign{ //text-align
+                .text-#{$key}-#{$name}{
+                    text-align: $type;
                 }
             }
         }
     }
 }
-//font-sizes
-@each $key, $value in $grid-breakpoints { //取出所有$grid-breakpoints的值
-    @if not $value {
-        @each $name,$size in $fontTypes{
-            .fz-#{$name}{
-                font-size: $baseSize * $size;
-            }
-        }
-    }@else{
-        @media screen and (min-width: $value) { //加上$grid-breakpoints的值到rwd中
-            @each $name,$size in $fontTypes{
-                .fz-#{$key}-#{$name}{
-                    font-size: $baseSize * $size;
-                }
-            }
-        }
-    }
+
+//font-styles
+.font-weight-bold{
+    font-weight: bold;
 }

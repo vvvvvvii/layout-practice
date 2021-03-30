@@ -67,3 +67,32 @@ $grid-breakpoints: (
     lg: 992px,
     xl: 1920px,
 );
+
+//display
+$displayTypes: (
+    none: none,
+    flex: flex,
+    block: block,
+    inline: inline,
+    inline-block: inline-block,
+) !default;
+
+$flexDirection: (
+    row: row,
+    column: column,
+) !default;
+
+$justifyContentTypes: (
+    start: start,
+    center: center,
+    end: end,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+) !default;
+
+$alignItemsTypes: (
+    start: start,
+    center: center,
+    end: end,
+) !default;

@@ -1,0 +1,49 @@
+@each $key, $value in $grid-breakpoints { //取出所有$grid-breakpoints的值
+    @if not $value { 
+        @each $name,$type in $displayTypes{
+            .d-#{$name}{
+                display: $type;
+            }
+        }
+        @each $name,$type in $flexDirection{
+            .flex-#{$name}{
+                flex-direction: $type;
+            }
+        }
+        @each $name,$type in $justifyContentTypes{
+            .justify-content-#{$name}{
+                justify-content: $type;
+            }
+        }
+        @each $name,$type in $alignItemsTypes{
+            .align-items-#{$name}{
+                align-items: $type;
+            }
+        } 
+    }@else{
+        @media screen and (min-width: $value) { //加上$grid-breakpoints的值到rwd中
+            @each $name,$type in $displayTypes{
+                .d-#{$key}-#{$name}{
+                    display: $type;
+                }
+            }
+            @each $name,$type in $flexDirection{
+                .flex-#{$key}-#{$name}{
+                    flex-direction: $type;
+                }
+            }
+            @each $name,$type in $justifyContentTypes{
+                .justify-content-#{$key}-#{$name}{
+                    justify-content: $type;
+                }
+            }
+            @each $name,$type in $alignItemsTypes{
+                .align-items-#{$key}-#{$name}{
+                    align-items: $type;
+                }
+            }
+        }
+    }
+}
+
+

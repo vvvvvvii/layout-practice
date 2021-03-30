@@ -1,14 +1,36 @@
 //text-colors
-@each $name,$color in $colorTypes{
-    .text-#{$name}{
-        color: $color;
+@each $key, $value in $grid-breakpoints { //取出所有$grid-breakpoints的值
+    @if not $value { 
+        @each $name,$color in $colorTypes{
+            .text-#{$name}{
+                color: $color;
+            }
+        }
+    }@else{
+        @media screen and (min-width: $value) { //加上$grid-breakpoints的值到rwd中
+            @each $name,$color in $colorTypes{
+                .text-#{$key}-#{$name}{
+                    color: $color;
+                }
+            }
+        }
     }
 }
-
 //font-sizes
-@each $name,$size in $fontTypes{
-    .fz-#{$name}{
-        font-size: $baseSize * $size;
+@each $key, $value in $grid-breakpoints { //取出所有$grid-breakpoints的值
+    @if not $value {
+        @each $name,$size in $fontTypes{
+            .fz-#{$name}{
+                font-size: $baseSize * $size;
+            }
+        }
+    }@else{
+        @media screen and (min-width: $value) { //加上$grid-breakpoints的值到rwd中
+            @each $name,$size in $fontTypes{
+                .fz-#{$key}-#{$name}{
+                    font-size: $baseSize * $size;
+                }
+            }
+        }
     }
 }
-

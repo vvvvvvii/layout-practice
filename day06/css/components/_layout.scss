@@ -41,8 +41,79 @@
     }
     &-link{
         display: block;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding: 8px 0;
         text-align: center;
+    }
+}
+.footer{
+    background: $primary;
+    padding-top: 36px;
+    padding-bottom: 28px;
+    &-logo{
+        width: 46px;
+        height: 27.93px;
+        @media (min-width: $grid-lg){
+            width: 80px;
+            height: 48.57px;
+        }
+    }
+    &-nav{
+        display: none;
+        @media (min-width: $grid-md){
+            display: flex;
+            margin-bottom: 24px;
+        }
+        @media (min-width: $grid-lg){
+            margin-bottom: 20px;
+        }
+        &-link{
+            @media (min-width: $grid-lg){
+                display: block;
+                padding: 13px 0;
+            }
+        }
+    }
+    &-link{
+        margin-left: 4px;
+        @media (min-width: $grid-md){
+            font-size: 20px;
+            margin-left: 12px;
+        }
+        @media (min-width: $grid-lg){
+            font-size: 36px;
+            margin-left: 16px;
+        }
+    }
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    @media (min-width: $grid-lg){
+        width: 48px;
+        height: 48px;
+    }
+    &-phone{
+        width: 20px;
+        height: 20px;
+        @media (min-width: $grid-md){
+            width: 24px;
+            height: 24px;
+        }
+        @media (min-width: $grid-lg){
+            width: 44px;
+            height: 44px;
+        }
+    }
+    &-email{
+        width: 20px;
+        height: 20px;
+        @media (min-width: $grid-md){
+            width: 32px;
+            height: 32px;
+        }
+        @media (min-width: $grid-lg){
+            width: 48px;
+            height: 48px;
+        }
     }
 }

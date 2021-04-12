@@ -499,6 +499,13 @@ img {
           flex-direction: column;
 }
 
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .justify-content-start {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -582,6 +589,12 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .flex-sm-row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
   .justify-content-sm-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -657,6 +670,12 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .flex-md-row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .justify-content-md-start {
     -webkit-box-pack: start;
@@ -734,6 +753,12 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .flex-lg-row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
   .justify-content-lg-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -809,6 +834,12 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .flex-xl-row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .justify-content-xl-start {
     -webkit-box-pack: start;
@@ -5266,7 +5297,6 @@ img {
 .section-title {
   font-size: 24px;
   font-weight: bold;
-  color: #650300;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -5285,31 +5315,45 @@ img {
   }
 }
 
-.card {
+.section-link:hover {
+  opacity: 0.8;
+}
+
+.section-icon {
+  height: 32px;
+}
+
+@media (min-width: 992px) {
+  .section-icon {
+    height: 48px;
+  }
+}
+
+.block {
   margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
-  .card {
+  .block {
     margin-bottom: 0;
   }
 }
 
-.card-img {
+.block-img {
   width: 80px;
   height: 80px;
   margin: 0 auto 16px;
 }
 
 @media (min-width: 992px) {
-  .card-img {
+  .block-img {
     width: 100px;
     height: 100px;
     margin-bottom: 40px;
   }
 }
 
-.card-title {
+.block-title {
   font-size: 20px;
   font-weight: bold;
   color: #650300;
@@ -5318,20 +5362,145 @@ img {
 }
 
 @media (min-width: 992px) {
-  .card-title {
+  .block-title {
     font-size: 24px;
     margin-bottom: 4px;
   }
 }
 
-.card-paragraph {
+.block-paragraph {
   width: 237px;
   margin: 0 auto;
 }
 
 @media (min-width: 992px) {
-  .card-paragraph {
+  .block-paragraph {
     width: 208px;
   }
+}
+
+.card-img {
+  width: auto;
+  height: 256px;
+}
+
+.card-main {
+  border-bottom: 1px #DEE2E6 solid;
+  border-left: 1px #DEE2E6 solid;
+  border-right: 1px #DEE2E6 solid;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .card-main {
+    padding: 14px 16px;
+  }
+}
+
+.card-title, .card-paragraph {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 992px) {
+  .card-title, .card-paragraph {
+    padding: 8px;
+  }
+}
+
+.card-title, .card-info {
+  font-size: 14px;
+}
+
+.card-info {
+  color: #707070;
+}
+
+.form-label {
+  margin-bottom: 4px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+}
+
+@media (min-width: 992px) {
+  .form-input {
+    margin-bottom: 16px;
+    padding: 14px 16px;
+  }
+}
+
+.bg-optical, .bg-sunglass, .bg-functional {
+  background-position: center;
+  background-size: cover;
+  padding: 48px 0;
+}
+
+.bg-optical {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-1.png?raw=true");
+}
+
+.bg-sunglass {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-2.png?raw=true");
+}
+
+.bg-functional {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-3.png?raw=true");
+}
+
+.bg-flagship-product {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.jpg?raw=true");
+}
+
+.bg-dblA, .bg-youth {
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .bg-dblA, .bg-youth {
+    padding: 118px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-dblA, .bg-youth {
+    padding: 188px 0;
+  }
+}
+
+.bg-dblA {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/oladimeji-odunsi-Wu3yqve2gnc-unsplash.jpg?raw=true");
+}
+
+.bg-youth {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/thiago-carlos-machado-oNXGsD7Ibsk-unsplash.jpg?raw=true");
+}
+
+.bg-user1, .bg-user2, .bg-user3, .bg-user4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-user1 {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/joseph-frank-YpBEA28Thos-unsplash.jpg?raw=true");
+}
+
+.bg-user2 {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/fotografierende-OIdeMsvPtFc-unsplash.jpg?raw=true");
+}
+
+.bg-user3 {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/marketa-marcellova-gbih2R2skmQ-unsplash.jpg?raw=true");
+}
+
+.bg-user4 {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/etty-fidele-nWdhpUrXxYY-unsplash.jpg?raw=true");
 }
 /*# sourceMappingURL=all.css.map */

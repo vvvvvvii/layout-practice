@@ -16,7 +16,6 @@
     &-title{
         font-size: 24px;
         font-weight: bold;
-        color: $dark-primary;
         text-align: center;
         margin-bottom: 20px;
         @media (min-width: $grid-md){
@@ -28,8 +27,17 @@
             margin-bottom: 60px;
         }
     }
+    &-link:hover{
+        opacity: 0.8;
+    }
+    &-icon{
+        height: 32px;
+        @media (min-width: $grid-lg){
+            height: 48px;
+        }
+    }
 }
-.card{
+.block{
     margin-bottom: 40px;
     @media (min-width: $grid-lg){
         margin-bottom: 0;
@@ -62,4 +70,98 @@
             width: 208px;
         }
     }
+}
+.card{
+    &-img{
+        width: auto;
+        height: 256px;
+    }
+    &-main{
+        border-bottom: 1px #DEE2E6 solid;
+        border-left: 1px #DEE2E6 solid;
+        border-right: 1px #DEE2E6 solid;
+        padding: 16px;
+        @media (min-width: $grid-md){
+            padding: 14px 16px;
+        }
+    }
+    &-title,&-paragraph{
+        margin-bottom: 16px;
+        @media (min-width: $grid-lg){
+            padding: 8px;
+        }
+    }
+    &-title,&-info{
+        font-size: 14px;
+    }
+    &-info{
+        color: #707070;
+    }
+}
+.form{
+    &-label{
+        margin-bottom: 4px;
+    }
+    &-input{
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 8px 12px;
+        @media (min-width: $grid-lg){
+            margin-bottom: 16px;
+            padding: 14px 16px;
+        }
+    }
+}
+.bg-optical,.bg-sunglass,.bg-functional{
+    background-position: center;
+    background-size: cover;
+    padding: 48px 0;
+}
+.bg-optical{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-1.png?raw=true');
+}
+.bg-sunglass{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-2.png?raw=true');
+}
+.bg-functional{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-3.png?raw=true');
+}
+.bg-flagship-product{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.jpg?raw=true');
+}
+.bg-dblA,.bg-youth{
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+    display: block;
+    @media (min-width: $grid-md){
+        padding: 118px 0;
+    }
+    @media (min-width: $grid-lg){
+        padding: 188px 0;
+    }
+}
+.bg-dblA{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/oladimeji-odunsi-Wu3yqve2gnc-unsplash.jpg?raw=true');
+}
+.bg-youth{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/thiago-carlos-machado-oNXGsD7Ibsk-unsplash.jpg?raw=true');
+}
+.bg-user1,.bg-user2,.bg-user3,.bg-user4{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-user1{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/joseph-frank-YpBEA28Thos-unsplash.jpg?raw=true');
+}
+.bg-user2{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/fotografierende-OIdeMsvPtFc-unsplash.jpg?raw=true');
+}
+.bg-user3{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/marketa-marcellova-gbih2R2skmQ-unsplash.jpg?raw=true');
+}
+.bg-user4{
+    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/etty-fidele-nWdhpUrXxYY-unsplash.jpg?raw=true');
 }

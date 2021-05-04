@@ -1,167 +1,176 @@
-.banner{
-    height: 394px;
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/laurenz-kleinheider-OsC8HauR0e0-unsplash.jpg?raw=true');
-    background-size: cover;
-    padding: 164px 0;
-    @media (min-width: $grid-md){
-        height: 840px;
-        padding: 372px 0;
-    }
-    @media (min-width: $grid-lg){
-        padding: 350px 0;
-    }
+.banner {
+  height: 394px;
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/laurenz-kleinheider-OsC8HauR0e0-unsplash.jpg?raw=true");
+  background-size: cover;
+  padding: 164px 0;
+  @media (min-width: $grid-md) {
+    height: 840px;
+    padding: 372px 0;
+  }
+  @media (min-width: $grid-lg) {
+    padding: 350px 0;
+  }
 }
-.section{
-    padding: 64px 0 80px;
-    &-title{
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 20px;
-        @media (min-width: $grid-md){
-            font-size: 32px;
-            margin-bottom: 32px;
-        }
-        @media (min-width: $grid-lg){
-            font-size: 48px;
-            margin-bottom: 60px;
-        }
+.section {
+  padding: 64px 0 80px;
+  &-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    @media (min-width: $grid-md) {
+      font-size: 32px;
+      margin-bottom: 32px;
     }
-    &-link:hover{
-        opacity: 0.8;
+    @media (min-width: $grid-lg) {
+      font-size: 48px;
+      margin-bottom: 60px;
     }
-    &-icon{
-        height: 32px;
-        @media (min-width: $grid-lg){
-            height: 48px;
-        }
+  }
+  &-link:hover {
+    opacity: 0.8;
+  }
+  &-icon {
+    color: $light;
+    font-size: 32px;
+    @media (min-width: $grid-lg) {
+      color: $primary;
+      font-size: 48px;
     }
+  }
 }
-.block{
-    margin-bottom: 40px;
-    @media (min-width: $grid-lg){
-        margin-bottom: 0;
+.block {
+  margin-bottom: 40px;
+  @media (min-width: $grid-lg) {
+    margin-bottom: 0;
+  }
+  &-img {
+    font-size: 80px;
+    color: $dark-primary;
+    margin-bottom: 16px;
+    @media (min-width: $grid-lg) {
+      font-size: 100px;
+      margin-bottom: 40px;
     }
-    &-img{
-        width: 80px;
-        height: 80px;
-        margin: 0 auto 16px;
-        @media (min-width: $grid-lg){
-            width: 100px;
-            height: 100px;
-            margin-bottom: 40px;
-        }
+  }
+  &-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: $dark-primary;
+    text-align: center;
+    margin-bottom: 8px;
+    @media (min-width: $grid-lg) {
+      font-size: 24px;
+      margin-bottom: 4px;
     }
-    &-title{
-        font-size: 20px;
-        font-weight: bold;
-        color: $dark-primary;
-        text-align: center;
-        margin-bottom: 8px;
-        @media (min-width: $grid-lg){
-            font-size: 24px;
-            margin-bottom: 4px;
-        }
+  }
+  &-paragraph {
+    width: 237px;
+    margin: 0 auto;
+    @media (min-width: $grid-lg) {
+      width: 208px;
     }
-    &-paragraph{
-        width: 237px;
-        margin: 0 auto;
-        @media (min-width: $grid-lg){
-            width: 208px;
-        }
-    }
+  }
 }
-.card{
-    &-img{
-        width: auto;
-        height: 256px;
+.card {
+  &-img {
+    width: auto;
+    height: 256px;
+  }
+  &-main {
+    border-bottom: 1px #dee2e6 solid;
+    border-left: 1px #dee2e6 solid;
+    border-right: 1px #dee2e6 solid;
+    padding: 16px;
+    @media (min-width: $grid-md) {
+      padding: 14px 16px;
     }
-    &-main{
-        border-bottom: 1px #DEE2E6 solid;
-        border-left: 1px #DEE2E6 solid;
-        border-right: 1px #DEE2E6 solid;
-        padding: 16px;
-        @media (min-width: $grid-md){
-            padding: 14px 16px;
-        }
+  }
+  &-title,
+  &-paragraph {
+    margin-bottom: 16px;
+    @media (min-width: $grid-lg) {
+      padding: 8px;
     }
-    &-title,&-paragraph{
-        margin-bottom: 16px;
-        @media (min-width: $grid-lg){
-            padding: 8px;
-        }
-    }
-    &-title,&-info{
-        font-size: 14px;
-    }
-    &-info{
-        color: #707070;
-    }
+  }
+  &-title,
+  &-info {
+    font-size: 14px;
+  }
+  &-info {
+    color: #707070;
+  }
 }
-.form{
-    &-label{
-        margin-bottom: 4px;
-    }
-    &-input{
-        display: block;
-        width: 100%;
-        margin-bottom: 8px;
-        padding: 8px 12px;
-        @media (min-width: $grid-lg){
-            margin-bottom: 16px;
-            padding: 14px 16px;
-        }
-    }
-}
-.bg-optical,.bg-sunglass,.bg-functional{
-    background-position: center;
-    background-size: cover;
-    padding: 48px 0;
-}
-.bg-optical{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-1.png?raw=true');
-}
-.bg-sunglass{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-2.png?raw=true');
-}
-.bg-functional{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-3.png?raw=true');
-}
-.bg-flagship-product{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.jpg?raw=true');
-}
-.bg-dblA,.bg-youth{
-    background-position: center;
-    background-size: cover;
-    padding: 120px 0;
+.form {
+  &-label {
+    margin-bottom: 4px;
+  }
+  &-input {
     display: block;
-    @media (min-width: $grid-md){
-        padding: 118px 0;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    @media (min-width: $grid-lg) {
+      margin-bottom: 16px;
+      padding: 14px 16px;
     }
-    @media (min-width: $grid-lg){
-        padding: 188px 0;
-    }
+  }
 }
-.bg-dblA{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/oladimeji-odunsi-Wu3yqve2gnc-unsplash.jpg?raw=true');
+.bg-optical,
+.bg-sunglass,
+.bg-functional {
+  background-position: center;
+  background-size: cover;
+  padding: 48px 0;
 }
-.bg-youth{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/thiago-carlos-machado-oNXGsD7Ibsk-unsplash.jpg?raw=true');
+.bg-optical {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-1.png?raw=true");
 }
-.bg-user1,.bg-user2,.bg-user3,.bg-user4{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.bg-sunglass {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-2.png?raw=true");
 }
-.bg-user1{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/joseph-frank-YpBEA28Thos-unsplash.jpg?raw=true');
+.bg-functional {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/product-3.png?raw=true");
 }
-.bg-user2{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/fotografierende-OIdeMsvPtFc-unsplash.jpg?raw=true');
+.bg-flagship-product {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.jpg?raw=true");
 }
-.bg-user3{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/marketa-marcellova-gbih2R2skmQ-unsplash.jpg?raw=true');
+.bg-dblA,
+.bg-youth {
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0;
+  display: block;
+  @media (min-width: $grid-md) {
+    padding: 118px 0;
+  }
+  @media (min-width: $grid-lg) {
+    padding: 188px 0;
+  }
 }
-.bg-user4{
-    background-image: url('https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/etty-fidele-nWdhpUrXxYY-unsplash.jpg?raw=true');
+.bg-dblA {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/oladimeji-odunsi-Wu3yqve2gnc-unsplash.jpg?raw=true");
+}
+.bg-youth {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/thiago-carlos-machado-oNXGsD7Ibsk-unsplash.jpg?raw=true");
+}
+.bg-user1,
+.bg-user2,
+.bg-user3,
+.bg-user4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-user1 {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/joseph-frank-YpBEA28Thos-unsplash.jpg?raw=true");
+}
+.bg-user2 {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/fotografierende-OIdeMsvPtFc-unsplash.jpg?raw=true");
+}
+.bg-user3 {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/marketa-marcellova-gbih2R2skmQ-unsplash.jpg?raw=true");
+}
+.bg-user4 {
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/etty-fidele-nWdhpUrXxYY-unsplash.jpg?raw=true");
 }

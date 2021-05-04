@@ -5320,12 +5320,14 @@ img {
 }
 
 .section-icon {
-  height: 32px;
+  color: #FFFFFF;
+  font-size: 32px;
 }
 
 @media (min-width: 992px) {
   .section-icon {
-    height: 48px;
+    color: #AA0601;
+    font-size: 48px;
   }
 }
 
@@ -5340,15 +5342,14 @@ img {
 }
 
 .block-img {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 16px;
+  font-size: 80px;
+  color: #650300;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 992px) {
   .block-img {
-    width: 100px;
-    height: 100px;
+    font-size: 100px;
     margin-bottom: 40px;
   }
 }
@@ -5385,9 +5386,9 @@ img {
 }
 
 .card-main {
-  border-bottom: 1px #DEE2E6 solid;
-  border-left: 1px #DEE2E6 solid;
-  border-right: 1px #DEE2E6 solid;
+  border-bottom: 1px #dee2e6 solid;
+  border-left: 1px #dee2e6 solid;
+  border-right: 1px #dee2e6 solid;
   padding: 16px;
 }
 
@@ -5433,7 +5434,9 @@ img {
   }
 }
 
-.bg-optical, .bg-sunglass, .bg-functional {
+.bg-optical,
+.bg-sunglass,
+.bg-functional {
   background-position: center;
   background-size: cover;
   padding: 48px 0;
@@ -5455,7 +5458,8 @@ img {
   background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.jpg?raw=true");
 }
 
-.bg-dblA, .bg-youth {
+.bg-dblA,
+.bg-youth {
   background-position: center;
   background-size: cover;
   padding: 120px 0;
@@ -5463,13 +5467,15 @@ img {
 }
 
 @media (min-width: 768px) {
-  .bg-dblA, .bg-youth {
+  .bg-dblA,
+  .bg-youth {
     padding: 118px 0;
   }
 }
 
 @media (min-width: 992px) {
-  .bg-dblA, .bg-youth {
+  .bg-dblA,
+  .bg-youth {
     padding: 188px 0;
   }
 }
@@ -5482,7 +5488,10 @@ img {
   background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/thiago-carlos-machado-oNXGsD7Ibsk-unsplash.jpg?raw=true");
 }
 
-.bg-user1, .bg-user2, .bg-user3, .bg-user4 {
+.bg-user1,
+.bg-user2,
+.bg-user3,
+.bg-user4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

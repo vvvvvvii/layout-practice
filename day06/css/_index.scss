@@ -147,6 +147,9 @@
   @media (min-width: $grid-lg) {
     padding: 188px 0;
   }
+  &:hover {
+    opacity: 0.8;
+  }
 }
 .bg-dblA {
   background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/oladimeji-odunsi-Wu3yqve2gnc-unsplash.jpg?raw=true");

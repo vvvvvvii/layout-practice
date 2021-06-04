@@ -1,0 +1,17 @@
+.box{
+    margin-bottom: 24px;
+    color: $dark;
+    &-img{
+        margin-bottom: 24px;
+    }
+    &-title{
+        margin-bottom: 5px;
+        border-left: 4px solid $primary;
+        padding-left: 15px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    &-content{
+        line-height: 2;
+    }
+}

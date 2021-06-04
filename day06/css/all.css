@@ -144,12 +144,12 @@ table {
 }
 
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #FBF2F2;
+  color: #fbf2f2;
 }
 
 img {
@@ -971,7 +971,7 @@ img {
 }
 
 .text-primary {
-  color: #AA0601;
+  color: #aa0601;
 }
 
 .text-dark-primary {
@@ -979,7 +979,7 @@ img {
 }
 
 .text-secondary {
-  color: #FBF2F2;
+  color: #fbf2f2;
 }
 
 .text-dark {
@@ -987,7 +987,11 @@ img {
 }
 
 .text-light {
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.text-deep-light {
+  color: #dcdcdc;
 }
 
 .fz-1 {
@@ -1052,19 +1056,22 @@ img {
 
 @media screen and (min-width: 375px) {
   .text-sm-primary {
-    color: #AA0601;
+    color: #aa0601;
   }
   .text-sm-dark-primary {
     color: #650300;
   }
   .text-sm-secondary {
-    color: #FBF2F2;
+    color: #fbf2f2;
   }
   .text-sm-dark {
     color: #111619;
   }
   .text-sm-light {
-    color: #FFFFFF;
+    color: #ffffff;
+  }
+  .text-sm-deep-light {
+    color: #dcdcdc;
   }
   .fz-sm-1 {
     font-size: 14px;
@@ -1115,19 +1122,22 @@ img {
 
 @media screen and (min-width: 768px) {
   .text-md-primary {
-    color: #AA0601;
+    color: #aa0601;
   }
   .text-md-dark-primary {
     color: #650300;
   }
   .text-md-secondary {
-    color: #FBF2F2;
+    color: #fbf2f2;
   }
   .text-md-dark {
     color: #111619;
   }
   .text-md-light {
-    color: #FFFFFF;
+    color: #ffffff;
+  }
+  .text-md-deep-light {
+    color: #dcdcdc;
   }
   .fz-md-1 {
     font-size: 14px;
@@ -1178,19 +1188,22 @@ img {
 
 @media screen and (min-width: 992px) {
   .text-lg-primary {
-    color: #AA0601;
+    color: #aa0601;
   }
   .text-lg-dark-primary {
     color: #650300;
   }
   .text-lg-secondary {
-    color: #FBF2F2;
+    color: #fbf2f2;
   }
   .text-lg-dark {
     color: #111619;
   }
   .text-lg-light {
-    color: #FFFFFF;
+    color: #ffffff;
+  }
+  .text-lg-deep-light {
+    color: #dcdcdc;
   }
   .fz-lg-1 {
     font-size: 14px;
@@ -1241,19 +1254,22 @@ img {
 
 @media screen and (min-width: 1920px) {
   .text-xl-primary {
-    color: #AA0601;
+    color: #aa0601;
   }
   .text-xl-dark-primary {
     color: #650300;
   }
   .text-xl-secondary {
-    color: #FBF2F2;
+    color: #fbf2f2;
   }
   .text-xl-dark {
     color: #111619;
   }
   .text-xl-light {
-    color: #FFFFFF;
+    color: #ffffff;
+  }
+  .text-xl-deep-light {
+    color: #dcdcdc;
   }
   .fz-xl-1 {
     font-size: 14px;
@@ -5139,7 +5155,7 @@ img {
 }
 
 .bg-primary {
-  background-color: #AA0601;
+  background-color: #aa0601;
 }
 
 .bg-dark-primary {
@@ -5147,7 +5163,7 @@ img {
 }
 
 .bg-secondary {
-  background-color: #FBF2F2;
+  background-color: #fbf2f2;
 }
 
 .bg-dark {
@@ -5155,15 +5171,19 @@ img {
 }
 
 .bg-light {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+}
+
+.bg-deep-light {
+  background-color: #dcdcdc;
 }
 
 .border-bottom-light {
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
 
 .header {
-  background: #AA0601;
+  background: #aa0601;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5225,7 +5245,7 @@ img {
 
 .header-item {
   width: 50%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -5242,7 +5262,7 @@ img {
 }
 
 .footer {
-  background: #AA0601;
+  background: #aa0601;
   padding-top: 36px;
   padding-bottom: 28px;
 }
@@ -5353,26 +5373,6 @@ img {
   }
 }
 
-.banner {
-  height: 394px;
-  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/laurenz-kleinheider-OsC8HauR0e0-unsplash.jpg?raw=true");
-  background-size: cover;
-  padding: 164px 0;
-}
-
-@media (min-width: 768px) {
-  .banner {
-    height: 840px;
-    padding: 372px 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .banner {
-    padding: 350px 0;
-  }
-}
-
 .section {
   padding: 64px 0 80px;
 }
@@ -5403,13 +5403,13 @@ img {
 }
 
 .section-icon {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 32px;
 }
 
 @media (min-width: 992px) {
   .section-icon {
-    color: #AA0601;
+    color: #aa0601;
     font-size: 48px;
   }
 }
@@ -5517,6 +5517,26 @@ img {
   }
 }
 
+.banner {
+  height: 394px;
+  background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/laurenz-kleinheider-OsC8HauR0e0-unsplash.jpg?raw=true");
+  background-size: cover;
+  padding: 164px 0;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 840px;
+    padding: 372px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner {
+    padding: 350px 0;
+  }
+}
+
 .bg-optical,
 .bg-sunglass,
 .bg-functional {
@@ -5599,5 +5619,59 @@ img {
 
 .bg-user4 {
   background-image: url("https://github.com/vvvvvvii/layout-practice/blob/main/day06/img/etty-fidele-nWdhpUrXxYY-unsplash.jpg?raw=true");
+}
+
+.sub-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sub-nav-item {
+  width: 33.333333%;
+}
+
+.sub-nav-link {
+  display: block;
+  padding: 8px 0;
+  border: 1px solid #dcdcdc;
+  color: #111619;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sub-nav-link {
+    font-size: 28px;
+    padding: 16px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-nav-link {
+    font-size: 42px;
+    padding: 24px 0;
+  }
+}
+
+.sub-nav-icon {
+  font-size: 15px;
+  margin-right: 4px;
+}
+
+@media (min-width: 768px) {
+  .sub-nav-icon {
+    font-size: 32px;
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-nav-icon {
+    font-size: 48px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

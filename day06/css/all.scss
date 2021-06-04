@@ -2,8 +2,8 @@
 @import "variables";
 
 //font style & css reset
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); //英文
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');//中文
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); //英文
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"); //中文
 @import "reset";
 
 //utils
@@ -19,3 +19,4 @@
 
 //pages
 @import "index";
+@import "products";

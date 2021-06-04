@@ -1,0 +1,56 @@
+// 考慮到募資網站其他頁也會用到相同版型，所以拉出來做一個元件
+.tips{
+    color: $gray-700;
+    border: 1px solid $gray-500;
+    border-radius: 8px;
+    padding: 16px;
+    &-header{
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &-body{
+        margin-bottom: 16px;
+    }
+    &-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-box{
+        padding: 16px;
+        background: $gray-100;
+    }
+    &-img{
+        border-radius: 50%;
+        &-sm{
+            width: 60px;
+            height: 60px;
+        }
+        &-lg{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    &-title{
+        font-size: 20px;
+        color: $dark;
+    }
+    &-icon{
+        background: #858377;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: block;
+        text-align: center;
+        .fab{
+            color: #fff;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+    &-btn{
+        border-width: 1px;
+        font-size: 12px;
+        font-weight: normal;
+    }
+}

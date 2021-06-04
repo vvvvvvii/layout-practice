@@ -1,0 +1,14 @@
+.callout{
+    border-radius: .5rem;
+    padding: 14px 16px;
+    &-left{
+        border-left: .25rem solid $primary;
+    }
+    &-sm{
+        padding: 6px 0;
+    }
+    &-x{
+        border-left: .25rem solid $primary;
+        border-right: .25rem solid $primary;
+    }
+}

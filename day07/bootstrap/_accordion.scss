@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: $accordion-button-padding-y $accordion-button-padding-x;
+  padding: 14px;
   @include font-size($font-size-base);
   color: $accordion-button-color;
   text-align: left; // Reset button style
@@ -16,6 +16,9 @@
   @include border-radius(0);
   overflow-anchor: none;
   @include transition($accordion-transition);
+  @include media-breakpoint-up(lg) {
+    padding: $accordion-button-padding-y $accordion-button-padding-x;
+  }
 
   &:not(.collapsed) {
     color: $accordion-button-active-color;
@@ -89,9 +92,12 @@
 }
 
 .accordion-body {
-  padding: $accordion-body-padding-y $accordion-body-padding-x $accordion-body-padding-y 64px;
+  padding: 12px 14px 14px;
   color: $secondary;
   line-height: 2;
+  @include media-breakpoint-up(lg) {
+    padding: $accordion-body-padding-y $accordion-body-padding-x $accordion-body-padding-y 64px;
+  }
 }
 
 // 參考竹白同學的做法

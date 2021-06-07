@@ -5462,7 +5462,13 @@ fieldset:disabled .btn {
 }
 
 .nav-link {
-  padding: 24px 0;
+  padding: 16px 0;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    padding: 24px 0;
+  }
 }
 
 .nav-link.active {
@@ -6144,7 +6150,7 @@ fieldset:disabled .btn {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 14px;
   font-size: 1rem;
   color: #494846;
   text-align: left;
@@ -6162,6 +6168,12 @@ fieldset:disabled .btn {
   .accordion-button {
     -webkit-transition: none;
     transition: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .accordion-button {
+    padding: 1rem 1.25rem;
   }
 }
 
@@ -6251,9 +6263,15 @@ fieldset:disabled .btn {
 }
 
 .accordion-body {
-  padding: 1rem 1.25rem 1rem 64px;
+  padding: 12px 14px 14px;
   color: #858377;
   line-height: 2;
+}
+
+@media (min-width: 992px) {
+  .accordion-body {
+    padding: 1rem 1.25rem 1rem 64px;
+  }
 }
 
 .accordion-collapse.show, .accordion-decoration {
@@ -7447,8 +7465,8 @@ fieldset:disabled .btn {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 1.1875rem;
+  border-top: 4px solid #FFDF65;
+  border-radius: 0.25rem;
   outline: 0;
 }
 
@@ -7484,8 +7502,8 @@ fieldset:disabled .btn {
           justify-content: space-between;
   padding: 1rem 1rem;
   border-bottom: 1px solid #eeeeee;
-  border-top-left-radius: calc(1.1875rem - 1px);
-  border-top-right-radius: calc(1.1875rem - 1px);
+  border-top-left-radius: calc(0.25rem - 4px);
+  border-top-right-radius: calc(0.25rem - 4px);
 }
 
 .modal-header .btn-close {
@@ -7503,7 +7521,7 @@ fieldset:disabled .btn {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 1rem;
+  padding: 24px 1rem 32px;
 }
 
 .modal-footer {
@@ -7522,8 +7540,8 @@ fieldset:disabled .btn {
           justify-content: flex-end;
   padding: 0.75rem;
   border-top: 1px solid #eeeeee;
-  border-bottom-right-radius: calc(1.1875rem - 1px);
-  border-bottom-left-radius: calc(1.1875rem - 1px);
+  border-bottom-right-radius: calc(0.25rem - 4px);
+  border-bottom-left-radius: calc(0.25rem - 4px);
 }
 
 .modal-footer > * {
@@ -8346,7 +8364,7 @@ fieldset:disabled .btn {
   top: 0;
   left: 0;
   width: 400px;
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 4px solid #FFDF65;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
@@ -8355,7 +8373,7 @@ fieldset:disabled .btn {
   top: 0;
   right: 0;
   width: 400px;
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 4px solid #FFDF65;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
@@ -8366,7 +8384,7 @@ fieldset:disabled .btn {
   left: 0;
   height: 30vh;
   max-height: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #FFDF65;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
@@ -8376,7 +8394,7 @@ fieldset:disabled .btn {
   left: 0;
   height: 30vh;
   max-height: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 4px solid #FFDF65;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
@@ -14935,20 +14953,38 @@ fieldset:disabled .btn {
 }
 
 .box {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   color: #494846;
 }
 
+@media (min-width: 768px) {
+  .box {
+    margin-bottom: 24px;
+  }
+}
+
 .box-img {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .box-img {
+    margin-bottom: 24px;
+  }
 }
 
 .box-title {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   border-left: 4px solid #FFDF65;
   padding-left: 15px;
   font-weight: bold;
   font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .box-title {
+    margin-bottom: 5px;
+  }
 }
 
 .box-content {
@@ -14969,7 +15005,13 @@ fieldset:disabled .btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 992px) {
+  .tips-header {
+    margin-bottom: 16px;
+  }
 }
 
 .tips-body {
@@ -14995,8 +15037,15 @@ fieldset:disabled .btn {
 }
 
 .tips-img-sm {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .tips-img-sm {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .tips-img-lg {
@@ -15041,6 +15090,10 @@ fieldset:disabled .btn {
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
+}
+
+.feature-icon {
+  width: 20px;
 }
 
 .sponsor-logo {

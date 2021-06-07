@@ -97,7 +97,10 @@
 
 // nav-link
   .nav-link{
-    padding: 24px 0;
+    padding: 16px 0;
+    @include media-breakpoint-up(lg) {
+      padding: 24px 0;
+    }
     &.active{
       font-weight: 700;
       border-bottom: 2px solid $primary;

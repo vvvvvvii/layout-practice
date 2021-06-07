@@ -1,15 +1,24 @@
 .box{
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     color: $dark;
-    &-img{
+    @include media-breakpoint-up(md) {
         margin-bottom: 24px;
+    }  
+    &-img{
+        margin-bottom: 16px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 24px;
+        } 
     }
     &-title{
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         border-left: 4px solid $primary;
         padding-left: 15px;
         font-weight: bold;
         font-size: 24px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 5px;
+        } 
     }
     &-content{
         line-height: 2;
